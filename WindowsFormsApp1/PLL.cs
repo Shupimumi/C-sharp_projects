@@ -14,10 +14,12 @@ namespace ComputerShopPLL
 	{
 		public Button login;
 		public Button signin;
+		public Button enter;
 		public PLL()
 		{
 			login = new Button();
 			signin = new Button();
+			enter = new Button();
 			signin.Size = new Size(60,30);
 			signin.Location = new Point(160,120);
 			signin.Text = "Sign in";
