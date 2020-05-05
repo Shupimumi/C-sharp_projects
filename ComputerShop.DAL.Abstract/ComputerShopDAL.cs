@@ -10,6 +10,12 @@ namespace ComputerShop.DAL.Abstract
 	{
 
 		bool Add (ComputerShopDTO data);
+		bool Remove (Guid id);
+		bool Update (ComputerShopDTO data);
+
+		ComputerShopDTO Get();
+		IEnumerable<ComputerShopDTO> GetAll();
+
 
 	}
 }
