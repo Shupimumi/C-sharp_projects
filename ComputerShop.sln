@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PLL", "PLL", "{75B5907B-ADDA-4FE5-A92B-3C3AC54C7DF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerShopPLL", "WindowsFormsApp1\ComputerShopPLL.csproj", "{4E966364-9A70-4C10-AE4B-7200DC2E247D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{4DA1A710-C2E0-4AD7-A3DA-E616CAD8FA21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{593F82A1-B871-4423-8495-F96343D9FDA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{D5489CA7-0B4A-435A-84A4-5FF64A6AD1A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerShop.DAL.Abstract", "ComputerShop.DAL.Abstract\ComputerShop.DAL.Abstract.csproj", "{0DFF2A91-C81C-4E42-A5D6-24F7F506B5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerShop.Entities", "ComputerShop\ComputerShop.Entities.csproj", "{BCE0600A-ECF1-4345-B1B3-F84547025D9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +27,22 @@ Global
 		{4E966364-9A70-4C10-AE4B-7200DC2E247D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E966364-9A70-4C10-AE4B-7200DC2E247D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E966364-9A70-4C10-AE4B-7200DC2E247D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFF2A91-C81C-4E42-A5D6-24F7F506B5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFF2A91-C81C-4E42-A5D6-24F7F506B5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFF2A91-C81C-4E42-A5D6-24F7F506B5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFF2A91-C81C-4E42-A5D6-24F7F506B5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE0600A-ECF1-4345-B1B3-F84547025D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE0600A-ECF1-4345-B1B3-F84547025D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE0600A-ECF1-4345-B1B3-F84547025D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE0600A-ECF1-4345-B1B3-F84547025D9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4E966364-9A70-4C10-AE4B-7200DC2E247D} = {75B5907B-ADDA-4FE5-A92B-3C3AC54C7DF9}
+		{0DFF2A91-C81C-4E42-A5D6-24F7F506B5DA} = {4DA1A710-C2E0-4AD7-A3DA-E616CAD8FA21}
+		{BCE0600A-ECF1-4345-B1B3-F84547025D9F} = {D5489CA7-0B4A-435A-84A4-5FF64A6AD1A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7801DA63-A4FF-4F32-B420-E4A3E3815FAA}
