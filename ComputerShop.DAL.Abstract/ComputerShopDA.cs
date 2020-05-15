@@ -6,7 +6,7 @@ using ComputerShop.Entities;
 
 namespace ComputerShop.DAL.Abstract
 {
-	interface ComputerShopDAL
+	public interface ComputerShopDAL
 	{
 
 		bool Add (ComputerShopDTO data);

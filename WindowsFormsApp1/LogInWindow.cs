@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace ComputerShopPLL
 {
-	public partial class PLL : Form
+	public partial class LogInWindow : Form
 	{
 		public Button login;
 		public Button signin;
 		public Button enter;
-		public PLL()
+		public LogInWindow ()
 		{
 			login = new Button();
 			signin = new Button();
@@ -40,6 +40,11 @@ namespace ComputerShopPLL
 			MessageBox.Show("There will be Sign in");
 		}
 		private void PLL_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Button1_Click(object sender, EventArgs e)
 		{
 
 		}
