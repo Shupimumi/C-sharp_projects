@@ -50,9 +50,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ConsoleApp2\ComputerShop.DAL.Abstract.csproj">
       <Project>{10ba48c6-0b13-4fa0-b95d-de6146fb9353}</Project>
       <Name>ComputerShop.DAL.Abstract</Name>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0A924BA-8314-415E-9C81-7A8B46E62DE8}</ProjectGuid>
+    <ProjectGuid>{F78FEBD6-2E72-4F94-A00D-0354C4510D91}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>ConsoleApp3</RootNamespace>
-    <AssemblyName>ConsoleApp3</AssemblyName>
+    <RootNamespace>ComputerShop.DAL.DB</RootNamespace>
+    <AssemblyName>ComputerShop.DAL.DB</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,8 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputerShop.DTO.cs" />
+    <Compile Include="DBDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp2\ComputerShop.DAL.Abstract.csproj">
+      <Project>{10ba48c6-0b13-4fa0-b95d-de6146fb9353}</Project>
+      <Name>ComputerShop.DAL.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConsoleApp3\ComputerShop.Entities.csproj">
+      <Project>{d0a924ba-8314-415e-9c81-7a8b46e62de8}</Project>
+      <Name>ComputerShop.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

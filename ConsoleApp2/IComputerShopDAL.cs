@@ -6,14 +6,14 @@ using ComputerShop.Entities;
 
 namespace ComputerShop.DAL.Abstract
 {
-	public interface ComputerShopDAL
+	public interface IComputerShopDAL
 	{
 
 		bool Add(ComputerShopDTO data);
 		bool Remove(Guid id);
 		bool Update(ComputerShopDTO data);
 
-		ComputerShopDTO Get();
+		ComputerShopDTO Get(Guid id);
 		IEnumerable<ComputerShopDTO> GetAll();
 
 

@@ -7,7 +7,7 @@ using ComputerShop.Entities;
 namespace ComputerShop.DAL.FakeDAL
 {
 
-	public class FakeDAL : ComputerShopDAL
+	public class FakeDAL : IComputerShopDAL
 	{
 		List<ComputerShopDTO> ComputerShopObject = new List<ComputerShopDTO>();
 

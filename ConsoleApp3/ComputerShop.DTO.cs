@@ -8,8 +8,13 @@ namespace ComputerShop.Entities
 	{
 
 		public Guid Id { get; set; }
-		public DateTime CreatedData { get; set; }
-		public string Text { get; set; }
+		public string Password { get; set; } //CreatedData
+		public string User { get; set; }//Text
+		public string Surname { get; set; }
+		public int Phone { get; set; }
+		public string Email { get; set; }
+		public int Passport { get; set; }
+		public string Name { get; set; }
 
 	}
 }
