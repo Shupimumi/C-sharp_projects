@@ -11,6 +11,13 @@ namespace LogInWindow
 		public void LogIn(object o, EventArgs e)
 		{
 
+			
+		}
+
+		
+		
+		public void fullSigninClick(object o, EventArgs e)
+		{
 
 		}
 	}
