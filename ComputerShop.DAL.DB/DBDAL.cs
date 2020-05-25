@@ -52,12 +52,35 @@ namespace ComputerShop.DAL.DB
 
 		public bool Remove(Guid id)
 		{
-			throw new NotImplementedException();
+			using (SqlConnection connection = new SqlConnection(connectionString))
+			{
+				SqlCommand command = new SqlCommand("DELETE FROM " +
+					"ComputerShop(Id, User, Password, Surname, Phone, Email, Passport, Name)" +
+					"WHERE Id=@Id", connection);
+				command.Parameters.AddWithValue("@Id", id);
+				int countRow = command.ExecuteNonQuery();
+				return countRow == 1;
+			}
 		}
 
 		public bool Update(ComputerShopDTO data)
 		{
-			throw new NotImplementedException();
+			using (SqlConnection connection = new SqlConnection(connectionString))
+			{
+				SqlCommand command = new SqlCommand("UPDATE FROM" +
+					"ComputerShop WHERE Id=@Id SET User=@User, Password=@Password, Surname=@Surname, Phone=@Phone," +
+					" Email=@Email, Passport=@Passport, Name=@Name)", connection);
+				command.Parameters.AddWithValue("@Id", data.Id);
+				command.Parameters.AddWithValue("@User", data.User);
+				command.Parameters.AddWithValue("@Password", data.Password);
+				command.Parameters.AddWithValue("@Surname", data.Surname);
+				command.Parameters.AddWithValue("@Phone", data.Phone);
+				command.Parameters.AddWithValue("@Email", data.Email);
+				command.Parameters.AddWithValue("@Passport", data.Passport);
+				command.Parameters.AddWithValue("@Name", data.Name);
+				int countRow = command.ExecuteNonQuery();
+				return countRow == 1;
+			}
 		}
 	}
 }

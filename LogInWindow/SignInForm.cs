@@ -10,14 +10,13 @@ using System.Windows.Forms;
 
 namespace LogInWindow
 {
-	public partial class LogInWindow : Form
+	public partial class SignInForm : Form
 	{
-		private Logic logic;
-		public LogInWindow()
+		public SignInForm()
 		{
 			InitializeComponent();
-			logic = new Logic();
 		}
 
+		
 	}
 }

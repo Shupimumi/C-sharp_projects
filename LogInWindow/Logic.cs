@@ -16,9 +16,6 @@ namespace LogInWindow
 
 		
 		
-		public void fullSigninClick(object o, EventArgs e)
-		{
-
-		}
+		
 	}
 }
